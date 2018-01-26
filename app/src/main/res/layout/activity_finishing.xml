@@ -35,7 +35,7 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_below="@+id/playAgainbtn"
-       android:layout_centerHorizontal="true"
+        android:layout_centerHorizontal="true"
         android:background="@color/transparentblack"
         android:text="Exit Game"
         android:textAllCaps="false"
