@@ -9,17 +9,14 @@ import android.widget.Button;
 public class StartingActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn1;
-    Button btn2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting);
 
         btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
         btn1.setOnClickListener(this);
-        btn2.setOnClickListener(this);
     }
 
     @Override
@@ -30,14 +27,7 @@ public class StartingActivity extends AppCompatActivity implements View.OnClickL
             Intent i = new Intent(this,MainActivity.class);
             startActivity(i);
         }
-        else if(v == findViewById(R.id.btn2))
-        {
-            onBackPressed();
-        }
+
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-    }
 }

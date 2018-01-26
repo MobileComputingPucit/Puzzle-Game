@@ -16,28 +16,14 @@
         android:numColumns="3"
         android:stretchMode="columnWidth" />
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="1500dp"
-        android:id="@+id/imgView"
-        android:layout_below="@id/gridview"
-        android:padding="15dp"
-        android:layout_alignParentEnd="true"
-        />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="1500dp"
+            android:id="@+id/imgView"
+            android:layout_below="@id/gridview"
+            android:padding="15dp"
+            android:layout_alignParentEnd="true"
+            />
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Reset"
-        android:id="@+id/resetBtn"
-        android:textColor="@color/black"
-        android:layout_alignParentLeft="true"
-        android:layout_margin="60dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        android:textStyle="bold"
-        android:textColorHighlight="@color/white"
-        />
 
 </RelativeLayout>
-
