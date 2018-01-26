@@ -15,9 +15,24 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     public static Bitmap[] splitImages;
+    private int[] img_locations;
     GridView gridview;
 
 
+
+    public MainActivity() {
+        img_locations = new int[9];
+        img_locations[0] = 0;
+        img_locations[1] = 1;
+        img_locations[2] = 2;
+        img_locations[3] = 3;
+        img_locations[4] = 4;
+        img_locations[5] = 5;
+        img_locations[6] = 6;
+        img_locations[7] = 7;
+        img_locations[8] = 8;
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +50,15 @@ public class MainActivity extends AppCompatActivity {
         Bitmap img = BitmapFactory.decodeResource(getResources(), R.drawable.icon);
         splitImages = splitBitmap(img);
 
+        ImageView v = (ImageView) findViewById(R.id.imgView);
+        v.setImageResource(R.drawable.icon);
+
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
 
-                        Toast.makeText(getApplicationContext(), "Item Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Item Clicked", Toast.LENGTH_SHORT).show();
             }
         });
 
